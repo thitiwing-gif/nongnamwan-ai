@@ -8,40 +8,47 @@
 <style>
 body{
 font-family:Arial,sans-serif;
-background:#f4f4f4;
-text-align:center;
+background:#f5f5f5;
+margin:0;
 padding:30px;
 }
-.container{
-background:#fff;
+
+.box{
 max-width:420px;
 margin:auto;
-padding:20px;
-border-radius:15px;
-box-shadow:0 0 10px rgba(0,0,0,.15);
+background:#fff;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+text-align:center;
 }
+
 h1{
-color:#ff4081;
+color:#ff3f86;
 }
-select,button{
-width:100%;
-padding:14px;
-margin:10px 0;
-font-size:18px;
-border-radius:10px;
-border:none;
-}
+
 select{
-border:1px solid #ccc;
+width:100%;
+padding:15px;
+font-size:18px;
+border-radius:12px;
+margin-top:20px;
 }
+
 button{
-background:#ff4081;
+width:100%;
+padding:16px;
+margin-top:20px;
+border:none;
+border-radius:12px;
+font-size:20px;
+background:#ff3f86;
 color:white;
-font-weight:bold;
 cursor:pointer;
 }
+
 button:hover{
-background:#e91e63;
+background:#ff1970;
 }
 </style>
 
@@ -49,35 +56,24 @@ background:#e91e63;
 
 <body>
 
-<div class="container">
+<div class="box">
 
 <h1>🎉 Nongnamwan AI</h1>
 
-<p>เลือก AI ที่ต้องการใช้งาน</p>
+<h3>เลือก AI</h3>
 
 <select id="ai">
-<option value="https://chat.openai.com/">🤖 ChatGPT</option>
-<option value="https://gemini.google.com/">✨ Gemini</option>
-<option value="https://claude.ai/">🧠 Claude</option>
-<option value="https://grok.com/">🚀 Grok</option>
-<option value="https://hailuoai.video/">🎬 Hailuo AI</option>
-<option value="https://app.klingai.com/">🎥 Kling AI</option>
-<option value="https://runwayml.com/">🎞️ Runway</option>
-<option value="https://pika.art/">📽️ Pika</option>
-<option value="https://www.capcut.com/">🎨 CapCut AI</option>
-<option value="https://www.canva.com/">🖌️ Canva AI</option>
-</select>
 
-<button onclick="openAI()">🚀 เปิด AI</button>
+<option value="https://chatgpt.com">🤖 ChatGPT</option>
 
-</div>
+<option value="https://gemini.google.com">✨ Gemini</option>
 
-<script>
-function openAI(){
-const url=document.getElementById("ai").value;
-window.open(url,"_blank");
-}
-</script>
+<option value="https://claude.ai">🧠 Claude</option>
 
-</body>
-</html>
+<option value="https://grok.com">🚀 Grok</option>
+
+<option value="https://www.perplexity.ai">🔎 Perplexity</option>
+
+<option value="https://hailuoai.video">🎬 Hailuo AI</option>
+
+<option value="https
