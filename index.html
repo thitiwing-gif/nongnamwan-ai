@@ -4,13 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nongnamwan AI</title>
-</head>
-<body style="font-family:Arial;text-align:center;padding:40px;">
-<h1>🎉 Nongnamwan AI</h1>
-<p>แอปสร้างภาพ วิดีโอ และโพสต์อัตโนมัติ</p>
 
-<button>สร้างภาพ AI</button><br><br>
-<button>สร้างวิดีโอ AI</button><br><br>
-<button>สร้างโพสต์ AI</button>
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+text-align:center;
+padding:30px;
+}
+.container{
+background:#fff;
+max-width:420px;
+margin:auto;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+h1{
+color:#ff4081;
+}
+select,button{
+width:100%;
+padding:14px;
+margin:10px 0;
+font-size:18px;
+border-radius:10px;
+border:none;
+}
+select{
+border:1px solid #ccc;
+}
+button{
+background:#ff4081;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+button:hover{
+background:#e91e63;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 Nongnamwan AI</h1>
+
+<p>เลือก AI ที่ต้องการใช้งาน</p>
+
+<select id="ai">
+<option value="https://chat.openai.com/">🤖 ChatGPT</option>
+<option value="https://gemini.google.com/">✨ Gemini</option>
+<option value="https://claude.ai/">🧠 Claude</option>
+<option value="https://grok.com/">🚀 Grok</option>
+<option value="https://hailuoai.video/">🎬 Hailuo AI</option>
+<option value="https://app.klingai.com/">🎥 Kling AI</option>
+<option value="https://runwayml.com/">🎞️ Runway</option>
+<option value="https://pika.art/">📽️ Pika</option>
+<option value="https://www.capcut.com/">🎨 CapCut AI</option>
+<option value="https://www.canva.com/">🖌️ Canva AI</option>
+</select>
+
+<button onclick="openAI()">🚀 เปิด AI</button>
+
+</div>
+
+<script>
+function openAI(){
+const url=document.getElementById("ai").value;
+window.open(url,"_blank");
+}
+</script>
+
 </body>
 </html>
