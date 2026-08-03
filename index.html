@@ -3,69 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nongnamwan AI</title>
 
 <style>
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f7f7f7;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f7f7f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 .box{
-width:90%;
-max-width:420px;
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-text-align:center;
+    width:90%;
+    max-width:420px;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    text-align:center;
 }
 
 h1{
-color:#ff3f86;
-margin-bottom:10px;
+    color:#ff3f86;
+    margin-bottom:10px;
 }
 
 p{
-color:#666;
+    color:#666;
 }
 
 select{
-width:100%;
-padding:15px;
-font-size:18px;
-border-radius:12px;
-margin-top:20px;
-}
-
-button{
-width:100%;
-padding:16px;
-margin-top:18px;
-font-size:20px;
-background:#ff3f86;
-color:white;
-border:none;
-border-radius:12px;
-cursor:pointer;
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    border-radius:12px;
+    margin-top:20px;
 }
 
 .menu{
-margin-top:20px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
 }
 
 .menu button{
-font-size:16px;
-background:#6c63ff;
+    background:#6c63ff;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    margin-top:18px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    background:#ff3f86;
+    color:#fff;
+    cursor:pointer;
 }
 </style>
 
@@ -80,33 +78,33 @@ background:#6c63ff;
 <p>เลือก AI และประเภทงาน</p>
 
 <select id="ai">
-<option>🤖 ChatGPT</option>
-<option>✨ Gemini</option>
-<option>🧠 Claude</option>
-<option>🚀 Grok</option>
-<option>🔍 Perplexity</option>
-<option>🎬 Hailuo AI</option>
+<option value="https://chatgpt.com">🤖 ChatGPT</option>
+<option value="https://gemini.google.com">✨ Gemini</option>
+<option value="https://claude.ai">🧠 Claude</option>
+<option value="https://grok.com">🚀 Grok</option>
+<option value="https://www.perplexity.ai">🔎 Perplexity</option>
+<option value="https://hailuoai.video">🎬 Hailuo AI</option>
 </select>
 
 <div class="menu">
-
 <button>🎨 สร้างภาพ</button>
-
 <button>🎬 สร้างวิดีโอ</button>
-
 <button>✍️ สร้างโพสต์</button>
-
 <button>📖 แต่งนิทาน</button>
-
 <button>📱 TikTok</button>
-
 <button>🛒 โฆษณา</button>
+</div>
+
+<button onclick="openAI()">🚀 เปิด AI</button>
 
 </div>
 
-<button>🚀 เปิด AI</button>
-
-</div>
+<script>
+function openAI(){
+    const ai=document.getElementById("ai").value;
+    window.open(ai,"_blank");
+}
+</script>
 
 </body>
 </html>
