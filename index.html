@@ -63,17 +63,20 @@ background:#ff1970;
 <h3>เลือก AI</h3>
 
 <select id="ai">
+  <option value="https://chat.openai.com">🤖 ChatGPT</option>
+  <option value="https://gemini.google.com">✨ Gemini</option>
+  <option value="https://claude.ai">🧠 Claude</option>
+  <option value="https://grok.com">🚀 Grok</option>
+  <option value="https://copilot.microsoft.com">💙 Copilot</option>
+</select>
 
-<option value="https://chatgpt.com">🤖 ChatGPT</option>
+<br><br>
 
-<option value="https://gemini.google.com">✨ Gemini</option>
+<button onclick="openAI()">🚀 เปิด AI</button>
 
-<option value="https://claude.ai">🧠 Claude</option>
-
-<option value="https://grok.com">🚀 Grok</option>
-
-<option value="https://www.perplexity.ai">🔎 Perplexity</option>
-
-<option value="https://hailuoai.video">🎬 Hailuo AI</option>
-
-<option value="https
+<script>
+function openAI(){
+  const url=document.getElementById("ai").value;
+  window.location.href=url;
+}
+</script>
